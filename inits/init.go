@@ -15,12 +15,20 @@ import (
 	"many2many/model"
 )
 
-func Table(){
-	db.Mysql().AutoMigrate(&model.Article{},&model.Tag{})
-	log.Println("Tables is inits done.")
+func Table() {
+	err := db.Mysql().AutoMigrate(
+		&model.User{},
+		&model.Role{},
+		&model.Api{},
+		&model.Menu{},
+		&model.Article{},
+		&model.Tag{},
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Fatalln("Tables is inits done.")
 }
-
-
 
 // InitTrans 初始化翻译器
 func ValidatorTrans(locale string) (err error) {

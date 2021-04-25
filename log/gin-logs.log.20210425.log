@@ -1,0 +1,5 @@
+{"ClientIP":"::1","LatencyTime":2439500,"Method":"GET","Status":200,"URL":"/find_article_by_tag","level":"info","msg":"","time":"2021-04-25 19:58:42"}
+{"ClientIP":"::1","LatencyTime":2999100,"Method":"GET","Status":200,"URL":"/find_article_by_tag","level":"info","msg":"","time":"2021-04-25 20:05:26"}
+{"ClientIP":"::1","LatencyTime":2574,"Method":"GET","Status":200,"URL":"/find_article_by_tag","level":"info","msg":"","time":"2021-04-25 20:05:56"}
+{"ClientIP":"::1","LatencyTime":2561,"Method":"GET","Status":200,"URL":"/find_article_by_tag","level":"info","msg":"","time":"2021-04-25 20:05:57"}
+{"ClientIP":"::1","LatencyTime":2893,"Method":"GET","Status":200,"URL":"/find_article_by_tag","level":"info","msg":"","time":"2021-04-25 20:05:58"}

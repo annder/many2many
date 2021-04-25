@@ -6,7 +6,7 @@ type Tag struct {
 	Model
 	Name    string    `json:"name" gorm:"unique;not null"` // 名字
 	Desc    string    `json:"desc"`                        // 描述
-	Article []Article `gorm:"many2many:article_tags"`      // 多对多
+	Article []Article `gorm:"many2many:article_tags"`
 }
 
 func (*Tag) Create(name, desc string) bool {
@@ -27,8 +27,6 @@ func (*Tag) FindAll() ([]Tag, error) {
 	}
 	return t, nil
 }
-
-
 
 func (*Tag) Find(name []string) ([]Tag, error) {
 	t := []Tag{{}}

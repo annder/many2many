@@ -4,6 +4,7 @@ import "many2many/db"
 
 type Article struct {
 	Model
+	UserID  string `json:"user_id"`
 	Title   string `json:"title"`   // 标题
 	Content string `json:"content"` // 内容
 	Tag     []Tag  `gorm:"many2many:article_tags"`
