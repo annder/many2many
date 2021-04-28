@@ -3,7 +3,9 @@ module many2many
 go 1.16
 
 require (
-	github.com/casbin/casbin/v2 v2.28.3 // indirect
+	github.com/appleboy/gin-jwt/v2 v2.6.4
+	github.com/casbin/casbin/v2 v2.28.3
+	github.com/casbin/gorm-adapter/v3 v3.2.9
 	github.com/gin-gonic/gin v1.7.1
 	github.com/go-playground/locales v0.13.0
 	github.com/go-playground/universal-translator v0.17.0
@@ -14,8 +16,6 @@ require (
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.4 // indirect
-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/onrik/gorm-logrus v0.3.0
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5

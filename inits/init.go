@@ -17,10 +17,12 @@ import (
 
 func Table() {
 	err := db.Mysql().AutoMigrate(
+		&model.CasbinRule{},
 		&model.User{},
 		&model.Role{},
 		&model.Api{},
 		&model.Menu{},
+		&model.MenuMate{},
 		&model.Article{},
 		&model.Tag{},
 	)
