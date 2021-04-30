@@ -2,6 +2,11 @@ package inits
 
 import (
 	"fmt"
+	"log"
+	"many2many/db"
+	"many2many/global"
+	"many2many/model"
+
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/locales/en"
 	"github.com/go-playground/locales/zh"
@@ -9,20 +14,15 @@ import (
 	"github.com/go-playground/validator/v10"
 	enTranslations "github.com/go-playground/validator/v10/translations/en"
 	zhTranslations "github.com/go-playground/validator/v10/translations/zh"
-	"log"
-	"many2many/db"
-	"many2many/global"
-	"many2many/model"
 )
 
 func Table() {
 	err := db.Mysql().AutoMigrate(
-		&model.CasbinRule{},
 		&model.User{},
 		&model.Role{},
 		&model.Api{},
+		&model.Mate{},
 		&model.Menu{},
-		&model.MenuMate{},
 		&model.Article{},
 		&model.Tag{},
 	)

@@ -1,6 +1,6 @@
 package model
 
-type MenuMate struct {
+type Mate struct {
 	Title      string `json:"title"`
 	Icon       string `json:"icon"`
 	NoCache    bool   `json:"no_cache"`   // 没有缓存
