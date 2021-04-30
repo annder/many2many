@@ -1,6 +1,9 @@
 package model
 
+import "gorm.io/gorm"
+
 type Mate struct {
+	gorm.Model
 	Title      string `json:"title"`
 	Icon       string `json:"icon"`
 	NoCache    bool   `json:"no_cache"`   // 没有缓存
